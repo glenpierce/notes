@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+
+:root { --ink: #171717; --paper: #f4f0e8; --muted: #746d62; --line: #d8d0c3; --orange: #f15b35; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; color: var(--ink); background: var(--paper); font-family: 'DM Sans', sans-serif; line-height: 1.65; }
+.hero { color: #f4f0e8; background: #151515; min-height: 670px; display: flex; align-items: center; position: relative; overflow: hidden; }
+.hero::after { content: 'SPEAK'; position: absolute; right: -0.06em; bottom: -0.26em; color: #252525; font-size: clamp(12rem, 34vw, 38rem); font-weight: 700; line-height: .8; letter-spacing: -.08em; pointer-events: none; }
+.hero__inner { width: min(1080px, calc(100% - 3rem)); margin: auto; position: relative; z-index: 1; padding: 5rem 0; }
+.eyebrow, .kicker, .chapter__marker, .media-card__year, footer { font-family: 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .12em; font-size: .72rem; }
+.eyebrow { color: #f8c951; margin: 0 0 2.5rem; }
+h1, h2 { line-height: 1.05; margin: 0; letter-spacing: -.04em; }
+h1 { font-size: clamp(3.6rem, 9vw, 8.6rem); max-width: 900px; }
+h1 em { color: var(--orange); font-family: 'Playfair Display', serif; font-weight: 700; }
+.dek { font: 700 clamp(1.4rem, 3vw, 2.5rem)/1 'DM Mono', monospace; color: #f8c951; margin: 1.8rem 0 1.4rem; }
+.intro { max-width: 650px; font-size: 1.12rem; color: #d2ccc1; }
+.scroll-link { display: inline-block; color: #f4f0e8; border-bottom: 1px solid var(--orange); padding: .8rem 0; margin-top: 1.8rem; text-decoration: none; }
+.scroll-link span { color: var(--orange); margin-left: 1rem; font-size: 1.25rem; }
+main { width: min(1080px, calc(100% - 3rem)); margin: auto; }
+.teacher-note { display: grid; grid-template-columns: 170px 1fr; gap: 1.5rem; border-bottom: 1px solid var(--line); padding: 2.3rem 0; font-size: .9rem; color: var(--muted); }
+.teacher-note strong { color: var(--ink); font-family: 'DM Mono', monospace; text-transform: uppercase; font-size: .7rem; letter-spacing: .08em; }
+.teacher-note p { margin: 0; max-width: 720px; }
+.timeline { padding: 8rem 0 5rem; }
+.chapter { display: grid; grid-template-columns: 170px 1fr; gap: 2rem; padding: 4rem 0 5rem; border-bottom: 1px solid var(--line); position: relative; }
+.chapter__marker { color: var(--accent); padding-top: .4rem; font-weight: 500; }
+.chapter__marker span { display: block; margin-top: .7rem; color: var(--muted); font-size: .65rem; }
+.chapter__body { max-width: 780px; }
+.kicker { color: var(--accent, var(--orange)); margin: 0 0 1rem; }
+h2 { font-size: clamp(2.2rem, 5vw, 4.2rem); }
+.chapter h2 { margin-bottom: 1.6rem; }
+.chapter p { max-width: 720px; }
+.chapter--gold { --accent: #b8860b; }.chapter--red { --accent: #d54227; }.chapter--blue { --accent: #32658d; }.chapter--violet { --accent: #8154a3; }.chapter--green { --accent: #32805f; }
+.media-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: .75rem; margin-top: 2rem; }
+.media-card { min-height: 122px; background: color-mix(in srgb, var(--accent) 11%, transparent); border-left: 4px solid var(--accent); padding: 1.1rem 1.2rem; color: var(--ink); display: grid; grid-template-columns: auto 1fr auto; align-items: start; gap: .75rem; text-decoration: none; font-weight: 500; transition: transform .2s, background .2s; }
+.media-card:hover, .media-card:focus-visible { transform: translateY(-3px); background: color-mix(in srgb, var(--accent) 20%, transparent); }
+.media-card__year { color: var(--accent); font-size: .65rem; }
+.media-card b { color: var(--accent); font-size: 1.15rem; }
+.media-card small { display: block; color: var(--muted); font: .65rem 'DM Mono', monospace; text-transform: uppercase; margin-top: .5rem; }
+.discussion, .sources { padding: 7rem 0; border-bottom: 1px solid var(--line); }
+.discussion h2, .sources h2 { margin-bottom: 2.5rem; }
+.discussion ol { padding: 0; margin: 0; list-style: none; counter-reset: questions; }
+.discussion li { counter-increment: questions; border-top: 1px solid var(--line); padding: 1.4rem 0 1.4rem 3.5rem; position: relative; max-width: 850px; }
+.discussion li::before { content: '0' counter(questions); position: absolute; left: 0; top: 1.65rem; color: var(--orange); font: .7rem 'DM Mono', monospace; }
+.sources { display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; }
+.sources ol { columns: 2; margin: 0; padding-left: 1.5rem; color: var(--muted); font-size: .84rem; }
+.sources li { break-inside: avoid; padding: .35rem 0 .35rem .5rem; }
+footer { width: min(1080px, calc(100% - 3rem)); margin: auto; padding: 2rem 0; display: flex; justify-content: space-between; gap: 1rem; color: var(--muted); font-size: .62rem; }
+footer a { color: var(--ink); text-decoration: none; }
+@media (max-width: 700px) {
+  .hero { min-height: 610px; }
+  .hero__inner, main, footer { width: min(100% - 2rem, 1080px); }
+  .teacher-note, .chapter, .sources { grid-template-columns: 1fr; gap: .7rem; }
+  .timeline { padding-top: 4rem; }
+  .chapter { padding: 3rem 0; }
+  .chapter__marker span { display: inline; margin-left: .8rem; }
+  .sources ol { columns: 1; }
+  footer { flex-direction: column; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .media-card { transition: none; } }
