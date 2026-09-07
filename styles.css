@@ -31,8 +31,9 @@ h2 { font-size: clamp(2.2rem, 5vw, 4.2rem); }
 .chapter p { max-width: 720px; }
 .chapter--gold { --accent: #b8860b; }.chapter--red { --accent: #d54227; }.chapter--blue { --accent: #32658d; }.chapter--violet { --accent: #8154a3; }.chapter--green { --accent: #32805f; }
 .media-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: .75rem; margin-top: 2rem; }
-.media-card { min-height: 122px; background: color-mix(in srgb, var(--accent) 11%, transparent); border-left: 4px solid var(--accent); padding: 1.1rem 1.2rem; color: var(--ink); display: grid; grid-template-columns: auto 1fr auto; align-items: start; gap: .75rem; text-decoration: none; font-weight: 500; transition: transform .2s, background .2s; }
-.media-card:hover, .media-card:focus-visible { transform: translateY(-3px); background: color-mix(in srgb, var(--accent) 20%, transparent); }
+.media-card { min-height: 122px; background: color-mix(in srgb, var(--accent) 11%, transparent); border-left: 4px solid var(--accent); padding: 1.1rem 1.2rem; color: var(--ink); display: grid; grid-template-columns: auto 1fr auto; align-items: start; gap: .75rem; font-weight: 500; transition: transform .2s, background .2s; }
+.media-card:hover, .media-card:focus-within { transform: translateY(-3px); background: color-mix(in srgb, var(--accent) 20%, transparent); }
+.media-card iframe { width: 100%; min-height: 190px; border: 0; grid-column: 1 / -1; }
 .media-card__year { color: var(--accent); font-size: .65rem; }
 .media-card b { color: var(--accent); font-size: 1.15rem; }
 .media-card small { display: block; color: var(--muted); font: .65rem 'DM Mono', monospace; text-transform: uppercase; margin-top: .5rem; }
