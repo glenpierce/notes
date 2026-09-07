@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<!-- saved from url=(0253)https://b46b42ae-4053-4dc8-8b6a-415aec01c213.frame.claudeusercontent.com/_f/1788751489-845d/?__frame_t=RkGrB1FBwPv-puPbbRPXa0SF.0b7b2c98-86ee-481c-acba-d871d8e26888.15e04962-b236-4c1a-b1bc-7f29a44344c7.1788756041&__frame_v=manifest.44244f2523adb29d.json -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- frame-runtime --><script>window.__FRAME_PREAMBLE={"v":1,"capabilities":{"artifact":"artifact.DfA2To-s.js","assets":"assets.8Gk803W0.js","comments":"comments.hEoja5zd.js","db":"db.h-3sndFg.js","downloads":"downloads.th1YuAIk.js","embed":"embed.eqL6deQM.js","endpoints":"endpoints.CfzSv5nM.js","mcp":"mcp.Bvma3qD7.js","network":"network.B5UA9Su4.js","permissions":"permissions.BNySkLV5.js","room":"room.VSdFwTE9.js","sample":"sample.BW2Uysoh.js","self":"artifact.DfA2To-s.js","user":"user.BpKav-Rf.js"},"transforms":"_transforms.-IAc0qoT.js","comments":"_comments.C-AkolIB.js","translate":"_translate.5HCW4BJh.js","ldx":"_ldx.6JS5dhCp.js"}</script><script>(function(){"use strict";var le=["light","dark","system"],ue=/^[A-Za-z0-9_-]{1,64}$/,J=/^[a-zA-Z_:][a-zA-Z0-9_:.-]{0,127}$/,fe=new Set(["class","hidden","value","checked","style","title","alt","placeholder","lang","dir","role","tabindex","disabled","readonly","contenteditable","open","colspan","rowspan"]);function de(e){const t=e.toLowerCase();return t.startsWith("data-")||t.startsWith("aria-")||fe.has(t)}var We="http://www.w3.org/1999/xhtml",pe="http://www.w3.org/2000/svg",me=new Set(["script","style","iframe","noscript","noframes","noembed","xmp","plaintext","template","title","textarea","object","embed"]),he=new Set(["script","style"]);function _e(e){const t=e.localName.toLowerCase();return e.namespaceURI==="http://www.w3.org/1999/xhtml"?!me.has(t):e.namespaceURI===pe?!he.has(t):!1}function I(e,t){return e===t||(e===160||e===32)&&(t===160||t===32)}function ve(e,t){const r=e.length,n=t.length;let a=0;for(;a<r&&a<n&&I(e.charCodeAt(a),t.charCodeAt(a));)a++;let s=0;for(;s<r-a&&s<n-a&&I(e.charCodeAt(r-1-s),t.charCodeAt(n-1-s));)s++;return{p:a,s}}function ye(e,t){const r=e.firstChild;if(e.childNodes.length!==1||r===null||r.nodeType!==Node.TEXT_NODE){e.textContent=t;return}const n=r.data,a=n.length,s=t.length,{p:c,s:i}=ve(n,t);c===a&&i===0&&a===s||r.replaceData(c,a-c-i,t.slice(c,s-i));const p=r.data,f=e.ownerDocument.getSelection?.()??null,v=f!==null&&f.rangeCount>0&&(f.anchorNode===r||f.focusNode===r)?{anchor:f.anchorNode,anchorOffset:f.anchorOffset,focus:f.focusNode,focusOffset:f.focusOffset}:null;let d=-1,y=-1;for(let _=0;_<p.length&&_<t.length;_++){const E=p.charCodeAt(_),T=t.charCodeAt(_);E!==T&&I(E,T)&&(d<0&&(d=_),y=_)}const w=d>=0;if(w&&r.replaceData(d,y-d+1,t.slice(d,y+1)),w&&v!==null&&v.anchor!==null&&v.focus!==null)try{f.setBaseAndExtent(v.anchor,v.anchorOffset,v.focus,v.focusOffset)}catch{}}var we=new Set(["html","head","body","frameset"]);function be(e){return e.namespaceURI==="http://www.w3.org/1999/xhtml"&&we.has(e.localName)}function Ee(e){if(e===null||typeof e!="object")return!1;const t=e;if(typeof t.target!="string"||!ue.test(t.target)||t.text!==void 0&&typeof t.text!="string")return!1;if(t.attrsSet!==void 0){if(t.attrsSet===null||typeof t.attrsSet!="object")return!1;for(const[r,n]of Object.entries(t.attrsSet))if(!J.test(r)||typeof n!="string")return!1}if(t.attrsRemoved!==void 0){if(!Array.isArray(t.attrsRemoved))return!1;for(const r of t.attrsRemoved)if(typeof r!="string"||!J.test(r))return!1}return!0}function ge(e,t){if(e===null||typeof e!="object")return!1;const{seq:r,elements:n}=e;if(typeof r!="number"||!Number.isSafeInteger(r)||!Array.isArray(n)||n.length===0||n.length>64)return!1;for(let a=0;a<n.length;a++)if(!t(n[a]))return!1;return!0}function Ae(e){return e===null||typeof e!="object"?!1:ge(e.__frame_patch,Ee)}function Te(e){if(e===null||typeof e!="object")return!1;const t=e.__frame_init;return t!==null&&typeof t=="object"}function Re(e){return e!==null&&typeof e=="object"&&e.__frame_size_poke===!0}function Le(e){if(e===null||typeof e!="object")return!1;const t=e.__frame_theme;if(t===null||typeof t!="object")return!1;const r=t.theme;return typeof r=="string"&&le.includes(r)}var L=/^[\w.-]+\.js$/;function Se(e,t,r){return r?"inert":typeof t=="string"&&L.test(t)?e?[t]:"inert":e?"inert":"framed"}var Ke="frame_ldx_runtime",$e="script#an-form";function ke(){return{post(e,t){parent.postMessage(e,t)},on(e){const t=r=>{r.source===parent&&e(r.data,r.origin,r.isTrusted)};return addEventListener("message",t),()=>removeEventListener("message",t)}}}function Pe(){return{post:()=>{},on:()=>()=>{}}}var U="__frame_scroll",Oe=150,Ce=310,Me=160,je=3e4;function Ne(){let e=0,t=!1,r=!1,n=!1,a=0,s=null;const c=u=>{try{sessionStorage.setItem(U,JSON.stringify({y:u}))}catch{}},i=()=>{if(clearTimeout(e),s===null)return;const u=s;s=null,c(u)},p=()=>{if(t){t=!1;return}r=!0,s=scrollY,clearTimeout(e),e=setTimeout(i,Oe)};try{addEventListener("scroll",p,{passive:!0}),addEventListener("pagehide",i)}catch{}const f=()=>{let u;try{u=sessionStorage.getItem(U)}catch{return null}if(u===null)return null;let b;try{b=JSON.parse(u)}catch{b=null}const o=b?.y;if(!(typeof o=="number"&&Number.isFinite(o)&&o>=0)){try{sessionStorage.removeItem(U)}catch{}return null}return o};let v=!1;const d=u=>{try{const b=scrollY;scrollTo({top:u,left:0,behavior:"instant"}),a=u,n=!0,clearTimeout(e),s=null,c(u);const o=scrollY;o!==b&&(t=!0),o!==u&&!v&&(v=!0,addEventListener("load",()=>{try{if(scrollY===o){const m=f();d(m!==null?m:a)}}catch{}},{once:!0}))}catch{}},y=()=>{try{return!!location.hash}catch{return!0}};let w=!1;const _=()=>{try{if(w||innerWidth>Ce||innerHeight>Me)return;w=!0;const u=Date.now(),b=()=>{try{removeEventListener("resize",b)}catch{}if(Date.now()-u>je||r||y())return;const o=f();d(o!==null?o:a)};addEventListener("resize",b)}catch{}};let E=!1,T=!1;return{restore(){if(E||(E=!0,y()))return;const u=f();u!==null&&(d(u),_())},promoted(){if(T||(T=!0,y()))return;const u=f();u!==null?(d(u),_()):n&&d(a)}}}function Be(e,t,r,n){let a=null;try{a=window.trustedTypes?.createPolicy("frame-runtime",{createScriptURL:p=>p})??null}catch{}const s=window.Worker,c=s?.prototype,i=Object.freeze({Worker:s,workerOn:c?.addEventListener,workerPost:c?.postMessage,workerTerminate:c?.terminate,fetch:window.fetch.bind(window),preventDefault:Event.prototype.preventDefault,policy:a,origins:t});r(e).then(p=>p?.bootTopLevel?p.bootTopLevel(i,n):n.settle()).catch(()=>n.settle())}var qe="modulepreload",Xe=function(e){return"/"+e},Ye={},De=function(t,r,n){let a=Promise.resolve();function s(c){const i=new Event("vite:preloadError",{cancelable:!0});if(i.payload=c,window.dispatchEvent(i),!i.defaultPrevented)throw c}return a.then(c=>{for(const i of c||[])i.status==="rejected"&&s(i.reason);return t().catch(s)})},Ie=window===top,Q=Object.getOwnPropertyDescriptor(window,"claude"),C=Se(Ie,window.__FRAME_PREAMBLE?.topLevel,Q?.writable===!1),x=typeof C=="object"&&C[0],h=x?Pe():ke();(function(){const e=Object.defineProperty,t=globalThis,r=["RTCPeerConnection","webkitRTCPeerConnection","RTCDataChannel","RTCIceCandidate","RTCSessionDescription","RTCRtpSender","RTCRtpReceiver"];let n=0;for(let a=0;a<r.length;a++){const s=r[a];try{e(t,s,{value:void 0,writable:!1,configurable:!1})}catch{try{delete t[s]}catch{}try{e(t,s,{value:void 0,writable:!1,configurable:!0})}catch{}}typeof t[s]=="function"&&n++}if(n&&C==="framed")try{h.post({__frame_rtc_lockdown_failed:n},"*")}catch{}})();var Ue=1e4,xe=2e3,ee=Object.freeze([...window.__FRAME_PREAMBLE?.origins??["https://claude.ai","https://preview.claude.ai"]]);function te(e){for(const t of ee)if(t.endsWith(":*"))try{const r=new URL(e);if(`${r.protocol}//${r.hostname}:*`===t)return!0}catch{}else if(e===t)return!0;return!1}var M=Object.freeze({...window.__FRAME_PREAMBLE?.capabilities}),F=window.__FRAME_PREAMBLE?.transforms,z=window.__FRAME_PREAMBLE?.comments,H=window.__FRAME_PREAMBLE?.translate,W=window.__FRAME_PREAMBLE?.ldx;function S(e){return De(()=>import("/_runtime/"+e),void 0)}function re(e,t){return{contract:e.contract,changes:new Set(e.changes??[]),flags:new Set(e.flags??[]),capabilities:e.capabilities??{},capBudgets:e.capBudgets??{},transforms:new Map,shellOrigin:t,mount:q,hooks:N,pipe:()=>({wrap:(r,n)=>(...a)=>{try{return n(...a)}catch(s){return Promise.reject(s)}}})}}var j=null,A=null;function ne(e,t,r){try{Object.defineProperty(e,t,{value:r,writable:!1,configurable:!1,enumerable:!0})}catch{try{Object.defineProperty(e,t,{value:r,writable:!1,configurable:!0,enumerable:!0})}catch{}}}var K=!1,N={editBefore:null,edit:null};function Fe(e,t,r=!1){const n=[];let a;if(r)try{N.editBefore?.(e)}catch{}for(const s of e.elements){const c=document.querySelector(`[data-id="${s.target}"]`);if(!c){a=s.target;break}if([...Object.keys(s.attrsSet??{}),...s.attrsRemoved??[]].some(i=>!de(i))){a=s.target;break}if(s.text!==void 0&&(!_e(c)||be(c))){a=s.target;break}for(const[i,p]of Object.entries(s.attrsSet??{}))if(!se(c,i)){try{c.setAttribute(i,p)}catch{}oe(c,i,p)}for(const i of s.attrsRemoved??[])se(c,i)||(c.removeAttribute(i),oe(c,i,null));typeof s.text=="string"&&ye(c,s.text),n.push(s.target)}if(r)try{N.edit?.(e.seq,n,a)}catch{}if(a!==void 0){h.post({__frame_patch_miss:{seq:e.seq}},t);return}try{document.dispatchEvent(new CustomEvent("claude:edit",{detail:{seq:e.seq,targets:n}}))}catch{}}function oe(e,t,r){if(!(e instanceof HTMLInputElement))return;const n=t.toLowerCase();n==="checked"?e.checked=r!==null:n==="value"&&e.type!=="file"&&(e.value=r??"")}function se(e,t){const r=t.toLowerCase(),n=e;return r==="data-id"||(r==="value"||r==="checked")&&(n.__artifactSecret===!0||/^(password|hidden|file)$/.test(n.type??"")||/(^|\s)(cc-|one-time-code|current-password|new-password)/i.test(`${e.getAttribute("autocomplete")??""} ${n.autocomplete??""}`))}function ae(e){const t=document.documentElement;e==="light"||e==="dark"?(t.dataset.theme=e,t.style.colorScheme=e,K=!0):K&&(delete t.dataset.theme,t.style.colorScheme="",K=!1)}var B=new Map;function ze(){let e;const t={u:new Promise(r=>{e=r}),r:r=>{t.done=!0,e(r)},done:!1,nulled:!1};return t}function $(){for(const e of B.values())e.done||(e.nulled=!0,e.r(null))}var He=Object.freeze(Object.assign(Object.create(null),{call:Function.prototype.call,apply:Function.prototype.apply,bind:Function.prototype.bind})),q=(e,t)=>{const r=B.get(e);if(!r||r.done){r?.nulled&&A&&h.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:e}},A);return}const n=typeof t=="function"?Object.setPrototypeOf(t,He):Object.assign(Object.create(null),t);typeof n.then=="function"&&delete n.then,r.r(Object.freeze(n))};function ie(){const e=Q?.value??{};ne(window,"claude",e);for(const t of Object.keys(M)){if(e[t]!==void 0){ne(e,t,e[t]);continue}B.set(t,ze())}if(e.use===void 0){const t=r=>{if(typeof r!="string"||!Object.hasOwn(M,r))return Promise.resolve(null);const n=B.get(r);return n?n.u:Promise.resolve(e[r]??null)};try{Object.defineProperty(e,"use",{value:t,writable:!0,configurable:!0,enumerable:!1})}catch{}}}if(C==="framed"){const e=F&&L.test(F)?S(F).catch(()=>{}):Promise.resolve(void 0),t=o=>{if(o.type==="auxclick"&&o.button!==1)return;const m=o.target,k=m&&m.closest?m.closest("a[href],area[href]"):null;if(!k)return;const O=k.getAttribute("href");if(!O)return;let R;try{R=new URL(O,document.baseURI)}catch{return}if((R.protocol==="http:"||R.protocol==="https:")&&R.origin!==location.origin){o.preventDefault();const P=(k.getAttribute("target")??"").toLowerCase(),g=o.type==="auxclick"||o.metaKey||o.ctrlKey||o.shiftKey||o.altKey||!["","_self","_top","_parent"].includes(P);h.post({__frame_nav:!0,url:R.href,newTab:g},"*")}};addEventListener("click",t,!0),addEventListener("auxclick",t,!0);const r={},n=o=>{o.isTrusted&&(r.pointer=!0)},a=o=>{o.isTrusted&&(r.click=!0)};addEventListener("pointermove",n,{capture:!0,passive:!0}),addEventListener("click",a,{capture:!0,passive:!0});const s={cb:null};addEventListener("keydown",o=>s.cb?.(o),!0),e.then(o=>o?.installEscapeForward?.(s,m=>{A&&h.post(m,A)})),e.then(o=>{o?.wireNav&&(o.wireNav(),removeEventListener("click",t,!0),removeEventListener("auxclick",t,!0),removeEventListener("pointermove",n,!0),removeEventListener("click",a,!0),o.wireEngagement?.(r))});let c=null;try{c=Ne()}catch{}ie();let i=null,p=null,f=0;const v=h.on((o,m)=>{te(m)&&Te(o)&&(i=o.__frame_init,A=m,v(),clearTimeout(f),p?.())});h.post({__frame_connect:!0},"*");const d=setTimeout,y=clearTimeout;let w=0;const _=()=>{try{h.post({__frame_alive:!0},"*")}catch{}w=d(_,xe)},E=()=>y(w);_(),addEventListener("load",E,{once:!0});const T=new Promise(o=>{p=o,f=setTimeout(()=>{v(),o()},Ue)}),u=document.readyState==="loading"?new Promise(o=>document.addEventListener("DOMContentLoaded",()=>o(),{once:!0})):Promise.resolve();u.then(()=>{try{c?.restore()}catch{}});const b={cb:null};h.on((o,m)=>{if(te(m)&&Re(o)){try{c?.promoted()}catch{}b.cb?.()}}),T.then(async()=>{if(!i||!A){$();return}ae(i.theme);const o=A;let m=!1,k=!1;h.on((l,Y,D)=>{if(Y!==o)return;Le(l)&&ae(l.__frame_theme.theme),Ae(l)&&Fe(l.__frame_patch,o,D);const G=l?.__fc_mode;G&&typeof G=="object"&&!m&&z&&L.test(z)&&(m=!0,S(z).then(Z=>Z.install?.(o,G.on===!0)).catch(()=>{}));const V=l?.__ft_cmd;V&&typeof V=="object"&&!k&&H&&L.test(H)&&(k=!0,S(H).then(Z=>Z.install?.(o,V)).catch(()=>{}))});const O=Object.keys(i.capabilities??{}).filter(l=>Object.hasOwn(M,l)).map(l=>[l,M[l]]).filter(l=>typeof l[1]=="string"&&L.test(l[1])),R=await Promise.allSettled(O.map(([,l])=>S(l))),P=await e,g=A;if(P?.buildBoot||h.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:"_transforms"}},g),P?.buildBoot)try{j=P.buildBoot(i,P.TRANSFORMS??{},{shellOrigin:g,mount:q,hooks:N},l=>h.post({__frame_cap_telemetry:l},g))}catch{h.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:"_transforms"}},g),j=re(i,g)}else j=re(i,g);const X=l=>h.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:l}},g),ce=j;R.forEach((l,Y)=>{const D=O[Y][0];if(l.status!=="fulfilled"){X(D);return}try{l.value?.install?.(ce)}catch{X(D)}}),$(),await u,E(),h.post({__frame_ready:!0},A),e.then(l=>l?.installSizeReporter?.(g,b)),ce.flags.has("frame_ldx_runtime")&&W&&L.test(W)&&document.querySelector("script#an-form")&&S(W).then(l=>l?.boot?.()).catch(()=>!1).then(l=>{l!==!0&&X("_ldx")})})}else x&&(ie(),Be(x,ee,S,{settle:$,mount:q}))})();</script><!-- /frame-runtime --><meta name="viewport" content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found]){display:none!important}</style></head><body>
+<title>The Hip-Hop File</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./css2" rel="stylesheet">
+<style>
+  :root{
+    --paper: #EDE7D6;
+    --paper-dim: #E1D7B9;
+    --paper-line: #C7BC9E;
+    --ink: #221F1A;
+    --ink-soft: #5A5343;
+    --stamp-red: #9E3128;
+    --stamp-red-soft: #9E312822;
+    --navy: #1F3B4D;
+    --navy-soft: #1F3B4D1a;
+    --tape: #D8CE9E;
+    --shadow: rgba(30,26,15,0.22);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper: #17140F;
+      --paper-dim: #221C13;
+      --paper-line: #3A331F;
+      --ink: #EDE6D2;
+      --ink-soft: #B3A98C;
+      --stamp-red: #D9695D;
+      --stamp-red-soft: #D9695D26;
+      --navy: #7FB0CE;
+      --navy-soft: #7FB0CE22;
+      --tape: #3A331F;
+      --shadow: rgba(0,0,0,0.55);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper: #17140F;
+    --paper-dim: #221C13;
+    --paper-line: #3A331F;
+    --ink: #EDE6D2;
+    --ink-soft: #B3A98C;
+    --stamp-red: #D9695D;
+    --stamp-red-soft: #D9695D26;
+    --navy: #7FB0CE;
+    --navy-soft: #7FB0CE22;
+    --tape: #3A331F;
+    --shadow: rgba(0,0,0,0.55);
+  }
+
+  *{ box-sizing: border-box; }
+  body{
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Public Sans', ui-sans-serif, system-ui, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+  }
+  a{ color: var(--navy); text-decoration-thickness: 1.5px; text-underline-offset: 2px; }
+  a:focus-visible, button:focus-visible, [tabindex]:focus-visible{
+    outline: 2px solid var(--stamp-red);
+    outline-offset: 3px;
+  }
+
+  .mono{ font-family: 'Special Elite', ui-monospace, monospace; }
+
+  /* ---------- shell ---------- */
+  .sheet{
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 1.5rem 5rem;
+  }
+
+  /* ---------- folder-tab nav ---------- */
+  .tabs{
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 1.25rem 1.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    font-family: 'Special Elite', monospace;
+  }
+  .tabs a{
+    background: var(--paper-dim);
+    border: 1px solid var(--paper-line);
+    border-bottom: none;
+    color: var(--ink-soft);
+    text-decoration: none;
+    font-size: .7rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    padding: .5rem .75rem .4rem;
+    border-radius: 4px 4px 0 0;
+    white-space: nowrap;
+  }
+  .tabs a:hover{ color: var(--stamp-red); border-color: var(--stamp-red); }
+
+  /* ---------- header / cover sheet ---------- */
+  .cover{
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 2.25rem 1.5rem 2.5rem;
+    border-bottom: 3px double var(--paper-line);
+  }
+  .file-no{
+    font-family: 'Special Elite', monospace;
+    font-size: .75rem;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin-bottom: 1.25rem;
+  }
+  h1.title{
+    font-family: 'Anton', 'Arial Narrow', sans-serif;
+    font-weight: 400;
+    font-size: clamp(2.6rem, 9vw, 4.4rem);
+    line-height: .92;
+    letter-spacing: .01em;
+    margin: 0 0 .5rem;
+    text-wrap: balance;
+  }
+  .subtitle{
+    font-family: 'Special Elite', monospace;
+    font-size: 1rem;
+    color: var(--ink-soft);
+    margin: 0 0 1.5rem;
+  }
+  .stamp{
+    display: inline-block;
+    font-family: 'Special Elite', monospace;
+    font-size: .78rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--stamp-red);
+    border: 3px solid var(--stamp-red);
+    padding: .35rem .7rem;
+    transform: rotate(-3deg);
+    border-radius: 3px;
+    opacity: .92;
+    margin-bottom: 1.5rem;
+  }
+  .lede{
+    font-size: 1.08rem;
+    max-width: 62ch;
+    margin: 0 0 1.5rem;
+  }
+  .advisory{
+    background: var(--paper-dim);
+    border-left: 3px solid var(--stamp-red);
+    padding: .9rem 1rem;
+    font-size: .88rem;
+    color: var(--ink-soft);
+    max-width: 62ch;
+  }
+  .advisory strong{ color: var(--ink); }
+
+  /* ---------- exhibits ---------- */
+  .exhibit{
+    padding: 3rem 0;
+    border-bottom: 1px dashed var(--paper-line);
+  }
+  .exhibit:last-of-type{ border-bottom: none; }
+
+  .exhibit-tag{
+    display: flex;
+    align-items: baseline;
+    gap: 1.1rem;
+    flex-wrap: wrap;
+    margin-bottom: .3rem;
+  }
+  .exhibit-letter{
+    font-family: 'Anton', sans-serif;
+    font-size: 3.2rem;
+    line-height: 1;
+    color: var(--stamp-red);
+  }
+  .exhibit-headline{
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    font-size: 1.9rem;
+    letter-spacing: .01em;
+    text-wrap: balance;
+  }
+  .exhibit-meta{
+    font-family: 'Special Elite', monospace;
+    font-size: .75rem;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: var(--ink-soft);
+    margin: 0 0 1.4rem;
+  }
+  .exhibit p{ max-width: 65ch; margin: 0 0 1.1rem; }
+
+  .analyst-note{
+    background: var(--navy-soft);
+    border: 1px dashed var(--navy);
+    padding: .85rem 1rem;
+    font-family: 'Special Elite', monospace;
+    font-size: .82rem;
+    color: var(--ink);
+    max-width: 60ch;
+    margin: 1.4rem 0;
+  }
+  .analyst-note::before{
+    content: "ANALYST'S NOTE — ";
+    color: var(--navy);
+    font-weight: bold;
+  }
+
+  /* ---------- video clips ---------- */
+  .clips{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.6rem;
+    margin: 1.6rem 0 .5rem;
+  }
+  .clip{
+    background: var(--paper-dim);
+    border: 1px solid var(--paper-line);
+    padding: .7rem .7rem .85rem;
+    box-shadow: 0 8px 18px var(--shadow);
+    position: relative;
+  }
+  .clip.rot-a{ transform: rotate(-1.1deg); }
+  .clip.rot-b{ transform: rotate(.9deg); }
+  .clip::before{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    width: 56px;
+    height: 20px;
+    background: var(--tape);
+    opacity: .8;
+    transform: translateX(-50%) rotate(-2deg);
+  }
+  .clip-visual{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background:
+      repeating-linear-gradient(135deg, var(--paper-line) 0 1px, transparent 1px 14px),
+      var(--paper);
+    border: 1px solid var(--paper-line);
+    overflow: hidden;
+    text-decoration: none;
+  }
+  .clip-icon{
+    width: 34%;
+    max-width: 92px;
+    color: var(--ink-soft);
+  }
+  .play-badge{
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    font-family: 'Special Elite', monospace;
+    font-size: .62rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--stamp-red);
+    background: var(--paper);
+    border: 1.5px solid var(--stamp-red);
+    border-radius: 999px;
+    padding: .25rem .55rem .25rem .4rem;
+    transform: rotate(-2deg);
+  }
+  .play-badge svg{ width: .6rem; height: .6rem; }
+  .clip-visual:hover .play-badge{ background: var(--stamp-red); color: var(--paper); }
+  .clip-visual:hover .clip-icon{ color: var(--stamp-red); }
+  .clip-caption{
+    font-family: 'Special Elite', monospace;
+    font-size: .74rem;
+    color: var(--ink-soft);
+    margin-top: .55rem;
+    line-height: 1.45;
+  }
+  .clip-caption b{ color: var(--ink); font-weight: normal; }
+  .clip-watch{
+    display: inline-block;
+    margin-top: .3rem;
+    font-family: 'Special Elite', monospace;
+    font-size: .7rem;
+    letter-spacing: .03em;
+  }
+  .content-flag{
+    display: inline-block;
+    font-family: 'Special Elite', monospace;
+    font-size: .65rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--stamp-red);
+    border: 1px solid var(--stamp-red);
+    padding: .1rem .35rem;
+    margin-top: .4rem;
+  }
+
+  /* ---------- discussion ---------- */
+  .discussion{
+    padding: 3rem 0;
+  }
+  .discussion h2{
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    font-size: 1.9rem;
+    margin: 0 0 .3rem;
+  }
+  .discussion .exhibit-meta{ margin-bottom: 1.5rem; }
+  .discussion ol{
+    padding-left: 1.3rem;
+    max-width: 65ch;
+  }
+  .discussion li{
+    margin-bottom: 1.1rem;
+    padding-left: .3rem;
+  }
+
+  /* ---------- footer / sources ---------- */
+  .sources{
+    padding-top: 2.5rem;
+    border-top: 3px double var(--paper-line);
+  }
+  .sources h2{
+    font-family: 'Special Elite', monospace;
+    font-size: .95rem;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: var(--ink-soft);
+    margin: 0 0 1rem;
+  }
+  .sources ol{
+    font-size: .82rem;
+    color: var(--ink-soft);
+    padding-left: 1.2rem;
+    columns: 1;
+  }
+  .sources li{ margin-bottom: .5rem; }
+  .prepared{
+    font-family: 'Special Elite', monospace;
+    font-size: .72rem;
+    color: var(--ink-soft);
+    margin-top: 2rem;
+    letter-spacing: .04em;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .clip.rot-a, .clip.rot-b{ transform: none; }
+  }
+</style>
+
+<nav class="tabs" aria-label="Jump to exhibit">
+  <a href="https://b46b42ae-4053-4dc8-8b6a-415aec01c213.frame.claudeusercontent.com/_f/1788751489-845d/?__frame_t=RkGrB1FBwPv-puPbbRPXa0SF.0b7b2c98-86ee-481c-acba-d871d8e26888.15e04962-b236-4c1a-b1bc-7f29a44344c7.1788756041&amp;__frame_v=manifest.44244f2523adb29d.json#exhibit-a">A · Roots</a>
+  <a href="https://b46b42ae-4053-4dc8-8b6a-415aec01c213.frame.claudeusercontent.com/_f/1788751489-845d/?__frame_t=RkGrB1FBwPv-puPbbRPXa0SF.0b7b2c98-86ee-481c-acba-d871d8e26888.15e04962-b236-4c1a-b1bc-7f29a44344c7.1788756041&amp;__frame_v=manifest.44244f2523adb29d.json#exhibit-b">B · The Bronx</a>
+  <a href="https://b46b42ae-4053-4dc8-8b6a-415aec01c213.frame.claudeusercontent.com/_f/1788751489-845d/?__frame_t=RkGrB1FBwPv-puPbbRPXa0SF.0b7b2c98-86ee-481c-acba-d871d8e26888.15e04962-b236-4c1a-b1bc-7f29a44344c7.1788756041&amp;__frame_v=manifest.44244f2523adb29d.json#exhibit-c">C · Confrontation</a>
+  <a href="https://b46b42ae-4053-4dc8-8b6a-415aec01c213.frame.claudeusercontent.com/_f/1788751489-845d/?__frame_t=RkGrB1FBwPv-puPbbRPXa0SF.0b7b2c98-86ee-481c-acba-d871d8e26888.15e04962-b236-4c1a-b1bc-7f29a44344c7.1788756041&amp;__frame_v=manifest.44244f2523adb29d.json#exhibit-d">D · Tupac</a>
+  <a href="https://b46b42ae-4053-4dc8-8b6a-415aec01c213.frame.claudeusercontent.com/_f/1788751489-845d/?__frame_t=RkGrB1FBwPv-puPbbRPXa0SF.0b7b2c98-86ee-481c-acba-d871d8e26888.15e04962-b236-4c1a-b1bc-7f29a44344c7.1788756041&amp;__frame_v=manifest.44244f2523adb29d.json#exhibit-e">E · Institution</a>
+  <a href="https://b46b42ae-4053-4dc8-8b6a-415aec01c213.frame.claudeusercontent.com/_f/1788751489-845d/?__frame_t=RkGrB1FBwPv-puPbbRPXa0SF.0b7b2c98-86ee-481c-acba-d871d8e26888.15e04962-b236-4c1a-b1bc-7f29a44344c7.1788756041&amp;__frame_v=manifest.44244f2523adb29d.json#discussion">Discussion</a>
+</nav>
+
+<header class="cover">
+  <div class="file-no">
+    <span>Case File No. 1973–2026</span>
+    <span>Subject: Black Rap &amp; American Politics</span>
+  </div>
+  <h1 class="title">THE HIP-HOP FILE</h1>
+  <p class="subtitle">A political history of Black rap, 1960s–2026</p>
+  <div class="stamp">For Classroom Use</div>
+  <p class="lede">Rap didn't invent Black political speech in America — it inherited it. This file traces five collisions between the music and the state: moments when a song, a rapper, or a stage became a genuine political event, from a 1973 block party in the Bronx to a football stadium in 2025. Read it in order. The dates matter.</p>
+  <div class="advisory">
+    <strong>A note for teachers:</strong> several of the songs and clips below contain explicit language, and depict police violence and street conditions that reflect the eras they document. They're included because they're the primary sources. Preview before class — several entries link to censored or clean versions where one exists.
+  </div>
+</header>
+
+<main class="sheet">
+
+  <section class="exhibit" id="exhibit-a">
+    <div class="exhibit-tag">
+      <span class="exhibit-letter">A</span>
+      <span class="exhibit-headline">Roots Before Rap</span>
+    </div>
+    <p class="exhibit-meta">1965–1971 · Harlem, Watts, and a country in upheaval</p>
+
+    <p>Before there was rap, there was the voice it borrowed from. The mid-1960s Black Power and Black Arts movements pushed Black artists to speak directly and unapologetically about race and power in America. In 1968, James Brown released "Say It Loud – I'm Black and I'm Proud," turning a dance-floor record into a statement of Black pride that cost him part of his white audience and won him the rest. Around the same time, a Harlem group called The Last Poets began setting political poetry to conga drums — a format hip-hop historians treat as rap's direct ancestor. In 1970, poet and musician Gil Scott-Heron released "The Revolution Will Not Be Televised," a spoken-word piece over jazz-funk that mocked consumer culture and demanded real political engagement instead of watching it on TV. None of these artists called what they were doing "rap." But by the time hip-hop had a name, it already had a political inheritance to draw on.</p>
+
+    <div class="analyst-note">Rap picked up a political voice before it picked up a beat.</div>
+
+    <div class="clips">
+      <figure class="clip rot-a">
+        <a class="clip-visual" href="https://www.youtube.com/watch?v=qfhSRfreLDE" target="_blank" rel="noopener" aria-label="Play James Brown, Say It Loud, I&#39;m Black and I&#39;m Proud, on YouTube (opens in new tab)">
+          <svg class="clip-icon" viewBox="0 0 100 60" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true">
+            <rect x="4" y="4" width="92" height="52" rx="4"></rect>
+            <circle cx="30" cy="30" r="12"></circle>
+            <circle cx="70" cy="30" r="12"></circle>
+            <circle cx="30" cy="30" r="3" fill="currentColor" stroke="none"></circle>
+            <circle cx="70" cy="30" r="3" fill="currentColor" stroke="none"></circle>
+            <path d="M18 46h64"></path>
+            <rect x="40" y="12" width="20" height="8" rx="1"></rect>
+          </svg>
+          <span class="play-badge"><svg viewBox="0 0 10 10" fill="currentColor" aria-hidden="true"><polygon points="1,0 10,5 1,10"></polygon></svg>Play clip</span>
+        </a>
+        <figcaption class="clip-caption"><b>James Brown</b> — "Say It Loud – I'm Black and I'm Proud" (1968)</figcaption>
+        <a class="clip-watch" href="https://www.youtube.com/watch?v=qfhSRfreLDE" target="_blank" rel="noopener">▶ watch on YouTube ↗</a>
+      </figure>
+      <figure class="clip rot-b">
+        <a class="clip-visual" href="https://www.youtube.com/watch?v=kZvWt29OG0s" target="_blank" rel="noopener" aria-label="Play Gil Scott-Heron, The Revolution Will Not Be Televised, on YouTube (opens in new tab)">
+          <svg class="clip-icon" viewBox="0 0 100 60" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true">
+            <rect x="4" y="4" width="92" height="52" rx="4"></rect>
+            <circle cx="30" cy="30" r="12"></circle>
+            <circle cx="70" cy="30" r="12"></circle>
+            <circle cx="30" cy="30" r="3" fill="currentColor" stroke="none"></circle>
+            <circle cx="70" cy="30" r="3" fill="currentColor" stroke="none"></circle>
+            <path d="M18 46h64"></path>
+            <rect x="40" y="12" width="20" height="8" rx="1"></rect>
+          </svg>
+          <span class="play-badge"><svg viewBox="0 0 10 10" fill="currentColor" aria-hidden="true"><polygon points="1,0 10,5 1,10"></polygon></svg>Play clip</span>
+        </a>
+        <figcaption class="clip-caption"><b>Gil Scott-Heron</b> — "The Revolution Will Not Be Televised" (1971)</figcaption>
+        <a class="clip-watch" href="https://www.youtube.com/watch?v=kZvWt29OG0s" target="_blank" rel="noopener">▶ watch on YouTube ↗</a>
+      </figure>
+    </div>
+  </section>
+
+  <section class="exhibit" id="exhibit-b">
+    <div class="exhibit-tag">
+      <span class="exhibit-letter">B</span>
+      <span class="exhibit-headline">Birth in the Bronx</span>
+    </div>
+    <p class="exhibit-meta">1973–1982 · 1520 Sedgwick Avenue, the Bronx</p>
+
+    <p>Hip-hop has a documented birthday: August 11, 1973, when DJ Kool Herc and his sister Cindy Campbell threw a back-to-school party in the rec room of 1520 Sedgwick Avenue in the Bronx. Herc's technique of isolating and looping a song's rhythmic break — the "breakbeat" — gave dancers something new to move to, and gave the genre's four pillars (DJing, MCing, breaking, and graffiti) a place to start. The Bronx around Herc's block was in crisis: landlords were burning buildings for insurance money, city services were being slashed, and youth unemployment was severe. Hip-hop grew directly out of that disinvestment. Nine years later, Grandmaster Flash and the Furious Five's "The Message" (1982) became the genre's first major hit to say so out loud — "don't push me, 'cause I'm close to the edge" described urban poverty in plain terms, at the height of Reagan-era cuts to city budgets and social programs.</p>
+
+    <div class="analyst-note">The genre's origin story is inseparable from the economic conditions it was born into.</div>
+
+    <div class="clips">
+      <figure class="clip rot-b">
+        <a class="clip-visual" href="https://www.youtube.com/watch?v=wD0-6ehjAuU" target="_blank" rel="noopener" aria-label="Play 1973, The Birth of Hip-Hop, DJ Kool Herc&#39;s Bronx Block Party, on YouTube (opens in new tab)">
+          <svg class="clip-icon" viewBox="0 0 100 60" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true">
+            <rect x="4" y="4" width="92" height="52" rx="4"></rect>
+            <circle cx="30" cy="30" r="12"></circle>
+            <circle cx="70" cy="30" r="12"></circle>
+            <circle cx="30" cy="30" r="3" fill="currentColor" stroke="none"></circle>
+            <circle cx="70" cy="30" r="3" fill="currentColor" stroke="none"></circle>
+            <path d="M18 46h64"></path>
+            <rect x="40" y="12" width="20" height="8" rx="1"></rect>
+          </svg>
+          <span class="play-badge"><svg viewBox="0 0 10 10" fill="currentColor" aria-hidden="true"><polygon points="1,0 10,5 1,10"></polygon></svg>Play clip</span>
+        </a>
+        <figcaption class="clip-caption"><b>Origin story</b> — DJ Kool Herc's 1973 Bronx block party</figcaption>
+        <a class="clip-watch" href="https://www.youtube.com/watch?v=wD0-6ehjAuU" target="_blank" rel="noopener">▶ watch on YouTube ↗</a>
+      </figure>
+      <figure class="clip rot-a">
+        <a class="clip-visual" href="https://www.youtube.com/watch?v=gYMkEMCHtJ4" target="_blank" rel="noopener" aria-label="Play Grandmaster Flash and the Furious Five, The Message, on YouTube (opens in new tab)">
+          <svg class="clip-icon" viewBox="0 0 100 60" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true">
+            <rect x="4" y="4" width="92" height="52" rx="4"></rect>
+            <circle cx="30" cy="30" r="12"></circle>
+            <circle cx="70" cy="30" r="12"></circle>
+            <circle cx="30" cy="30" r="3" fill="currentColor" stroke="none"></circle>
+            <circle cx="70" cy="30" r="3" fill="currentColor" stroke="none"></circle>
+            <path d="M18 46h64"></path>
+            <rect x="40" y="12" width="20" height="8" rx="1"></rect>
+          </svg>
+          <span class="play-badge"><svg viewBox="0 0 10 10" fill="currentColor" aria-hidden="true"><polygon points="1,0 10,5 1,10"></polygon></svg>Play clip</span>
+        </a>
+        <figcaption class="clip-caption"><b>Grandmaster Flash &amp; the Furious Five</b> — "The Message" (1982)</figcaption>
+        <a class="clip-watch" href="https://www.youtube.com/watch?v=gYMkEMCHtJ4" target="_blank" rel="noopener">▶ watch on YouTube ↗</a>
+      </figure>
+    </div>
+  </section>
+
+  <section class="exhibit" id="exhibit-c">
+    <div class="exhibit-tag">
+      <span class="exhibit-letter">C</span>
+      <span class="exhibit-headline">Confrontation With the State</span>
+    </div>
+    <p class="exhibit-meta">1988–1992 · Long Island, Compton, Los Angeles</p>
+
+    <p>By the late 1980s, rap had turned its inherited political voice into direct confrontation. Public Enemy's Chuck D called rap "Black America's CNN" and delivered on it with <em>It Takes a Nation of Millions to Hold Us Back</em> (1988) and "Fight the Power" (1989), aiming squarely at police power and structural racism. N.W.A's 1988 album <em>Straight Outta Compton</em> did the same from a different angle, and its track "F— tha Police" provoked an actual federal response: in 1989, an assistant director of the FBI sent the group's label a letter formally objecting to the song — a rare case of a federal law-enforcement agency putting its objection to a piece of music in writing. Three years later, the acquittal of the police officers who beat Rodney King triggered the 1992 Los Angeles riots; Ice Cube's music turned even more explicitly political in response, and Ice-T's "Cop Killer" drew public condemnation from Vice President Dan Quayle. That same June, presidential candidate Bill Clinton publicly criticized rapper Sister Souljah's comments about the riots at a Rainbow Coalition event — a calculated break from a Black activist voice that political writers still call a "Sister Souljah moment."</p>
+
+    <div class="analyst-note">This is the moment rap stopped being commentary and started being treated, officially, as a threat.</div>
+
+    <div class="clips">
+      <figure class="clip rot-a">
+        <a class="clip-visual" href="https://www.youtube.com/watch?v=e-4AtiOjBmg" target="_blank" rel="noopener" aria-label="Play Public Enemy, Fight the Power, on YouTube (opens in new tab)">
+          <svg class="clip-icon" viewBox="0 0 100 60" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true">
+            <rect x="4" y="4" width="92" height="52" rx="4"></rect>
+            <circle cx="30" cy="30" r="12"></circle>
+            <circle cx="70" cy="30" r="12"></circle>
+            <circle cx="30" cy="30" r="3" fill="currentColor" stroke="none"></circle>
+            <circle cx="70" cy="30" r="3" fill="currentColor" stroke="none"></circle>
+            <path d="M18 46h64"></path>
+            <rect x="40" y="12" width="20" height="8" rx="1"></rect>
+          </svg>
+          <span class="play-badge"><svg viewBox="0 0 10 10" fill="currentColor" aria-hidden="true"><polygon points="1,0 10,5 1,10"></polygon></svg>Play clip</span>
+        </a>
+        <figcaption class="clip-caption"><b>Public Enemy</b> — "Fight the Power" (1989)</figcaption>
+        <a class="clip-watch" href="https://www.youtube.com/watch?v=e-4AtiOjBmg" target="_blank" rel="noopener">▶ watch on YouTube ↗</a>
+      </figure>
+      <figure class="clip rot-b">
+        <a class="clip-visual" href="https://www.youtube.com/watch?v=gnHC7zy17pY" target="_blank" rel="noopener" aria-label="Play N.W.A, Straight Outta Compton, censored version, on YouTube (opens in new tab)">
+          <svg class="clip-icon" viewBox="0 0 100 60" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true">
+            <rect x="4" y="4" width="92" height="52" rx="4"></rect>
+            <circle cx="30" cy="30" r="12"></circle>
+            <circle cx="70" cy="30" r="12"></circle>
+            <circle cx="30" cy="30" r="3" fill="currentColor" stroke="none"></circle>
+            <circle cx="70" cy="30" r="3" fill="currentColor" stroke="none"></circle>
+            <path d="M18 46h64"></path>
+            <rect x="40" y="12" width="20" height="8" rx="1"></rect>
+          </svg>
+          <span class="play-badge"><svg viewBox="0 0 10 10" fill="currentColor" aria-hidden="true"><polygon points="1,0 10,5 1,10"></polygon></svg>Play clip</span>
+        </a>
+        <figcaption class="clip-caption"><b>N.W.A</b> — "Straight Outta Compton," censored version (1988)</figcaption>
+        <a class="clip-watch" href="https://www.youtube.com/watch?v=gnHC7zy17pY" target="_blank" rel="noopener">▶ watch on YouTube ↗</a>
+        <span class="content-flag">explicit language</span>
+      </figure>
+      <figure class="clip rot-a">
+        <a class="clip-visual" href="https://www.youtube.com/watch?v=xtSifopiL1g" target="_blank" rel="noopener" aria-label="Play archival clip, Bill Clinton&#39;s Sister Souljah moment, June 13 1992, on YouTube (opens in new tab)">
+          <svg class="clip-icon" viewBox="0 0 100 60" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true">
+            <rect x="4" y="4" width="92" height="52" rx="4"></rect>
+            <circle cx="30" cy="30" r="12"></circle>
+            <circle cx="70" cy="30" r="12"></circle>
+            <circle cx="30" cy="30" r="3" fill="currentColor" stroke="none"></circle>
+            <circle cx="70" cy="30" r="3" fill="currentColor" stroke="none"></circle>
+            <path d="M18 46h64"></path>
+            <rect x="40" y="12" width="20" height="8" rx="1"></rect>
+          </svg>
+          <span class="play-badge"><svg viewBox="0 0 10 10" fill="currentColor" aria-hidden="true"><polygon points="1,0 10,5 1,10"></polygon></svg>Play clip</span>
+        </a>
+        <figcaption class="clip-caption"><b>Archival clip</b> — Clinton's "Sister Souljah moment" (June 13, 1992)</figcaption>
+        <a class="clip-watch" href="https://www.youtube.com/watch?v=xtSifopiL1g" target="_blank" rel="noopener">▶ watch on YouTube ↗</a>
+      </figure>
+    </div>
+  </section>
+
+  <section class="exhibit" id="exhibit-d">
+    <div class="exhibit-tag">
+      <span class="exhibit-letter">D</span>
+      <span class="exhibit-headline">The Personal Is Political — Tupac</span>
+    </div>
+    <p class="exhibit-meta">1971–2026 · From the Panther 21 trial to a Las Vegas courtroom</p>
+
+    <p>Tupac Shakur's politics were inherited, not adopted. His mother, Afeni Shakur, was a Black Panther Party member who stood trial in the 1969–71 "Panther 21" conspiracy case while pregnant with him; she was acquitted on all charges weeks before he was born in June 1971. Tupac carried that lineage into songs that mixed street narrative with direct social commentary — "Changes," "Brenda's Got a Baby," "Trapped" — making him one of the first mainstream rappers read as both a gangsta-rap figure and a political one, often in the same verse. He was shot and killed in Las Vegas in September 1996, in a case that stayed formally unsolved for nearly three decades. On September 1, 2026, a jury convicted Duane "Keffe D" Davis of first-degree murder in Tupac's killing — closing, thirty years later, one of hip-hop's longest-open cases.</p>
+
+    <div class="analyst-note">A single family carries the line from the Black Panthers to modern rap — and the case just closed, thirty years later.</div>
+
+    <div class="clips">
+      <figure class="clip rot-a">
+        <a class="clip-visual" href="https://www.youtube.com/watch?v=yr_rDXhqvmM" target="_blank" rel="noopener" aria-label="Play 2Pac, Changes, on YouTube (opens in new tab)">
+          <svg class="clip-icon" viewBox="0 0 100 60" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true">
+            <rect x="4" y="4" width="92" height="52" rx="4"></rect>
+            <circle cx="30" cy="30" r="12"></circle>
+            <circle cx="70" cy="30" r="12"></circle>
+            <circle cx="30" cy="30" r="3" fill="currentColor" stroke="none"></circle>
+            <circle cx="70" cy="30" r="3" fill="currentColor" stroke="none"></circle>
+            <path d="M18 46h64"></path>
+            <rect x="40" y="12" width="20" height="8" rx="1"></rect>
+          </svg>
+          <span class="play-badge"><svg viewBox="0 0 10 10" fill="currentColor" aria-hidden="true"><polygon points="1,0 10,5 1,10"></polygon></svg>Play clip</span>
+        </a>
+        <figcaption class="clip-caption"><b>2Pac</b> — "Changes" (released 1998)</figcaption>
+        <a class="clip-watch" href="https://www.youtube.com/watch?v=yr_rDXhqvmM" target="_blank" rel="noopener">▶ watch on YouTube ↗</a>
+        <span class="content-flag">explicit language</span>
+      </figure>
+    </div>
+  </section>
+
+  <section class="exhibit" id="exhibit-e">
+    <div class="exhibit-tag">
+      <span class="exhibit-letter">E</span>
+      <span class="exhibit-headline">From Protest to Institution</span>
+    </div>
+    <p class="exhibit-meta">2008–2026 · The campaign trail to the Super Bowl</p>
+
+    <p>By the 2000s, rap had moved from being investigated by the government to being courted by it. Barack Obama's 2008 campaign openly embraced hip-hop culture — a symbolic long way from the FBI's 1989 letter. A decade later, Kendrick Lamar's <em>DAMN.</em> won the 2018 Pulitzer Prize for Music, the first time the prize went to a work that wasn't classical or jazz — a landmark acknowledgment of rap as serious art. In between, his 2015 song "Alright" was adopted, unscripted, by Black Lives Matter protesters as a literal street chant after the deaths of Michael Brown and others — a rare case of a studio recording becoming a protest song by public demand rather than design. That arc reached its most visible point yet at the 2025 Super Bowl, where Lamar's halftime show delivered an overtly political performance to the largest audience in halftime-show history. By 2026, hip-hop was being formally folded into American institutional memory: more Grammy wins for Lamar, street co-namings for Nipsey Hussle and DMX, and Wu-Tang Clan's induction into the Rock &amp; Roll Hall of Fame.</p>
+
+    <div class="analyst-note">The government that once wrote a letter condemning a rap song now gives rap its highest honors.</div>
+
+    <div class="clips">
+      <figure class="clip rot-b">
+        <a class="clip-visual" href="https://www.youtube.com/watch?v=Z-48u_uWMHY" target="_blank" rel="noopener" aria-label="Play Kendrick Lamar, Alright, on YouTube (opens in new tab)">
+          <svg class="clip-icon" viewBox="0 0 100 60" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true">
+            <rect x="4" y="4" width="92" height="52" rx="4"></rect>
+            <circle cx="30" cy="30" r="12"></circle>
+            <circle cx="70" cy="30" r="12"></circle>
+            <circle cx="30" cy="30" r="3" fill="currentColor" stroke="none"></circle>
+            <circle cx="70" cy="30" r="3" fill="currentColor" stroke="none"></circle>
+            <path d="M18 46h64"></path>
+            <rect x="40" y="12" width="20" height="8" rx="1"></rect>
+          </svg>
+          <span class="play-badge"><svg viewBox="0 0 10 10" fill="currentColor" aria-hidden="true"><polygon points="1,0 10,5 1,10"></polygon></svg>Play clip</span>
+        </a>
+        <figcaption class="clip-caption"><b>Kendrick Lamar</b> — "Alright" (2015)</figcaption>
+        <a class="clip-watch" href="https://www.youtube.com/watch?v=Z-48u_uWMHY" target="_blank" rel="noopener">▶ watch on YouTube ↗</a>
+        <span class="content-flag">explicit / mature imagery</span>
+      </figure>
+      <figure class="clip rot-a">
+        <a class="clip-visual" href="https://www.youtube.com/watch?v=Ob_ztAnzrks" target="_blank" rel="noopener" aria-label="Play Kendrick Lamar, Super Bowl LIX Halftime Show, on YouTube (opens in new tab)">
+          <svg class="clip-icon" viewBox="0 0 100 60" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true">
+            <rect x="4" y="4" width="92" height="52" rx="4"></rect>
+            <circle cx="30" cy="30" r="12"></circle>
+            <circle cx="70" cy="30" r="12"></circle>
+            <circle cx="30" cy="30" r="3" fill="currentColor" stroke="none"></circle>
+            <circle cx="70" cy="30" r="3" fill="currentColor" stroke="none"></circle>
+            <path d="M18 46h64"></path>
+            <rect x="40" y="12" width="20" height="8" rx="1"></rect>
+          </svg>
+          <span class="play-badge"><svg viewBox="0 0 10 10" fill="currentColor" aria-hidden="true"><polygon points="1,0 10,5 1,10"></polygon></svg>Play clip</span>
+        </a>
+        <figcaption class="clip-caption"><b>Kendrick Lamar</b> — Super Bowl LIX halftime show (2025)</figcaption>
+        <a class="clip-watch" href="https://www.youtube.com/watch?v=Ob_ztAnzrks" target="_blank" rel="noopener">▶ watch on YouTube ↗</a>
+      </figure>
+    </div>
+  </section>
+
+  <section class="discussion" id="discussion">
+    <h2>Case Review: Questions for Discussion</h2>
+    <p class="exhibit-meta">For classroom use</p>
+    <ol>
+      <li>Why might a government agency treat a song as a threat? What does the 1989 FBI letter to N.W.A suggest about the relationship between art and state power — and can you think of a modern equivalent?</li>
+      <li>Compare Bill Clinton's 1992 "Sister Souljah moment" to a more recent controversy involving a musician and a politician. What does the pattern reveal about how mainstream politicians relate to Black political voices?</li>
+      <li>"Alright" moved from a studio recording to a chant on the street without its creator's direction. What does that journey tell us about who actually gets to decide what a protest song means?</li>
+      <li>Is hip-hop's institutional recognition in 2025–2026 — Grammys, a Super Bowl stage, the Rock &amp; Roll Hall of Fame — a victory for the culture, or does mainstream acceptance change what the music is allowed to say? Argue one side.</li>
+    </ol>
+  </section>
+
+  <section class="sources">
+    <h2>Sources &amp; Further Reading</h2>
+    <ol>
+      <li>Red Bull Music Academy Daily, <a href="https://daily.redbullmusicacademy.com/2016/05/poetry-proto-rap-and-soul-the-sounds-of-the-black-power-revolution/" target="_blank" rel="noopener">"Poetry, Proto-Rap and Soul: The Sounds of the Black Power Revolution"</a></li>
+      <li>Poetry Foundation, <a href="https://www.poetryfoundation.org/poets/gil-scott-heron" target="_blank" rel="noopener">Gil Scott-Heron biography</a></li>
+      <li>The Washington Post, <a href="https://www.washingtonpost.com/history/2023/08/10/hip-hop-50-kool-herc-cindy-campbell-bronx-party/" target="_blank" rel="noopener">"DJ Kool Herc, Cindy Campbell threw a party that birthed hip-hop 50 years ago"</a> (2023)</li>
+      <li>Carnegie Hall, <a href="https://timeline.carnegiehall.org/genres/rap-hip-hop" target="_blank" rel="noopener">"History of Rap &amp; Hip-Hop" timeline</a></li>
+      <li>Rolling Stone, <a href="https://www.rollingstone.com/music/music-features/nwa-fuck-tha-police-protest-song-1010355/" target="_blank" rel="noopener">"How N.W.A's 'Fuck tha Police' Became the 'Perfect Protest Song'"</a></li>
+      <li>Wikipedia, <a href="https://en.wikipedia.org/wiki/Fuck_tha_Police" target="_blank" rel="noopener">"Fuck tha Police"</a> (FBI letter background)</li>
+      <li>Wikipedia, <a href="https://en.wikipedia.org/wiki/Sister_Souljah_moment" target="_blank" rel="noopener">"Sister Souljah moment"</a></li>
+      <li>Biography.com, <a href="https://www.biography.com/activists/a42942753/afeni-shakur" target="_blank" rel="noopener">"Afeni Shakur: Biography, Tupac's Mother, Black Panther Member"</a></li>
+      <li>NPR, <a href="https://www.npr.org/2026/09/01/g-s1-141341/conviction-tupac-shakur-murder" target="_blank" rel="noopener">"Jury convicts a man of first-degree murder for the 1996 killing of Tupac Shakur"</a> (Sept. 1, 2026)</li>
+      <li>Variety, <a href="https://variety.com/2018/music/news/kendrick-lamar-wins-pulitzer-prize-for-damn-1202754548/" target="_blank" rel="noopener">"Kendrick Lamar Wins Pulitzer Prize for 'Damn'"</a> (2018)</li>
+      <li>Slate, <a href="https://slate.com/culture/2015/08/black-lives-matter-protesters-chant-kendrick-lamars-alright-what-makes-it-the-perfect-protest-song-video.html" target="_blank" rel="noopener">"Black Lives Matter protesters chant Kendrick Lamar's 'Alright'"</a></li>
+      <li>NPR, <a href="https://www.npr.org/2019/08/26/753511135/kendrick-lamar-alright-american-anthem-party-protest" target="_blank" rel="noopener">"Both Party And Protest, 'Alright' Is The Sound Of Black Life's Duality"</a></li>
+      <li>nss magazine, <a href="https://www.nssmag.com/en/lifestyle/39884/kendrick-lamar-super-bowl-2025-political-show" target="_blank" rel="noopener">"Kendrick Lamar at Super Bowl 2025: A Historic Show of Politics and Provocation"</a></li>
+      <li>Wikipedia, <a href="https://en.wikipedia.org/wiki/2026_in_hip-hop" target="_blank" rel="noopener">"2026 in hip-hop"</a></li>
+    </ol>
+    <p class="prepared">Prepared for classroom use · September 2026</p>
+  </section>
+
+</main>
+
+</body></html>
